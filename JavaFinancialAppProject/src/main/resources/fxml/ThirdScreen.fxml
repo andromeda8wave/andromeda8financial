@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.financialapp.controllers.ThirdScreenController"
+      spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <HBox spacing="10">
+        <Label text="Wallet:"/>
+        <ComboBox fx:id="walletFilterBox" promptText="Select Wallet"/>
+
+        <Label text="From:"/>
+        <DatePicker fx:id="startFilterDate"/>
+
+        <Label text="To:"/>
+        <DatePicker fx:id="endFilterDate"/>
+
+        <Button fx:id="applyDashboardFilterButton" text="Apply Filter"/>
+
+        <!-- NEW: Refresh Wallets Button -->
+        <Button fx:id="refreshWalletsButton" text="Refresh Wallets"/>
+    </HBox>
+
+    <PieChart fx:id="annualExpensesPieChart" prefHeight="250" prefWidth="400"/>
+
+    <LineChart fx:id="monthlyDynamicsLineChart" prefHeight="250" prefWidth="600">
+        <xAxis>
+            <CategoryAxis fx:id="monthAxis"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="amountAxis"/>
+        </yAxis>
+    </LineChart>
+</VBox>

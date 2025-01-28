@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.financialapp.controllers.FirstScreenController"
+      spacing="10">
+    <!-- Padding around the entire VBox -->
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <!-- Period Selection Controls (Month, Year, and Apply Button) -->
+    <HBox spacing="15">
+        <Label text="Month:"/>
+        <ComboBox fx:id="monthCombo" promptText="Select Month" prefWidth="120"/>
+        
+        <Label text="Year:"/>
+        <ComboBox fx:id="yearCombo" promptText="Select Year" prefWidth="100"/>
+        
+        <Button fx:id="applyPeriodButton" text="Apply Period" prefWidth="120"/>
+    </HBox>
+
+    <!-- Charts Section (Pie Chart + Bar Chart) -->
+    <HBox spacing="10">
+        <!-- Pie Chart: Expense Structure for the selected month/year -->
+        <PieChart fx:id="expensesPieChart" prefHeight="250" prefWidth="300"/>
+
+        <!-- Bar Chart: Plan vs Actual by category for the selected month/year -->
+        <BarChart fx:id="planActualBarChart" prefHeight="250" prefWidth="400">
+            <xAxis>
+                <CategoryAxis fx:id="planActualCategoryAxis"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="planActualNumberAxis"/>
+            </yAxis>
+        </BarChart>
+    </HBox>
+
+    <!-- Summary Table (Plan-Fact-Deviation) -->
+    <TableView fx:id="summaryTable" prefHeight="200" prefWidth="500">
+        <columns>
+            <TableColumn fx:id="categoryColumn" text="Category" prefWidth="150"/>
+            <TableColumn fx:id="planColumn" text="Plan" prefWidth="100"/>
+            <TableColumn fx:id="actualColumn" text="Fact" prefWidth="100"/>
+            <TableColumn fx:id="deviationColumn" text="Deviation" prefWidth="100"/>
+        </columns>
+    </TableView>
+</VBox>

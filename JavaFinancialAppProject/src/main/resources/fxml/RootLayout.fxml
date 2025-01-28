@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.financialapp.controllers.RootLayoutController">
+    <center>
+        <TabPane fx:id="mainTabPane">
+            <Tab text="Overview">
+                <content>
+                    <fx:include source="FirstScreen.fxml"/>
+                </content>
+            </Tab>
+            <Tab text="Transactions">
+                <content>
+                    <fx:include source="SecondScreen.fxml"/>
+                </content>
+            </Tab>
+            <Tab text="Annual Dashboard">
+                <content>
+                    <fx:include source="ThirdScreen.fxml"/>
+                </content>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>

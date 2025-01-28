@@ -1,0 +1,17 @@
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/models/Transaction.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/models/SummaryRow.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/controllers/ThirdScreenController.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/models/Category.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/MainApp.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/database/DatabaseConnection.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/controllers/ManageWalletsController.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/controllers/FirstScreenController.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/controllers/EditPlanController.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/controllers/RootLayoutController.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/models/Wallet.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/models/Subcategory.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/controllers/SecondScreenController.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/models/Currency.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/util/CsvExporter.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/controllers/ManageCurrenciesController.java
+/Users/andromeda8wave/Desktop/JavaFinancialAppProject/src/main/java/com/financialapp/controllers/ManageCategoriesController.java

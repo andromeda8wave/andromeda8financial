@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.financialapp.controllers.ManageCurrenciesController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <center>
+        <VBox spacing="10">
+            <Label text="Currencies:"/>
+            <TableView fx:id="currenciesTable" prefWidth="300">
+                <columns>
+                    <TableColumn fx:id="currencyCodeCol" text="Code" prefWidth="80"/>
+                    <TableColumn fx:id="currencyNameCol" text="Name" prefWidth="180"/>
+                </columns>
+            </TableView>
+
+            <HBox spacing="10">
+                <Label text="Code:"/>
+                <TextField fx:id="currencyCodeField"/>
+                <Label text="Name:"/>
+                <TextField fx:id="currencyNameField"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Button fx:id="addCurrencyBtn" text="Add"/>
+                <Button fx:id="deleteCurrencyBtn" text="Delete"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
